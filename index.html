@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Agendamento Dentista</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="profile">
+            <img src="8726390_user_icon.png" alt="Usuário">
+            <h3>ALEFIM SILVA</h3>
+            <p>Usuário</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Cadastros</a></li>
+                <li><a href="#">Atendimento</a></li>
+                <li><a href="#">Agendamentos</a></li>
+                <li><a href="#">Pagamentos</a></li>
+                <li><a href="#">Utilitários</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="main-content">
+        <header>
+            <h1>Agendamentos</h1>
+        </header>
+        <section class="appointments">
+            <form id="appointmentForm">
+                <label for="patientName">Nome do Paciente:</label>
+                <input type="text" id="patientName" name="patientName" required>
+
+                <label for="appointmentDate">Data:</label>
+                <input type="date" id="appointmentDate" name="appointmentDate" required>
+
+                <label for="appointmentTime">Horário:</label>
+                <input type="time" id="appointmentTime" name="appointmentTime" required>
+
+                <button type="submit">Agendar</button>
+            </form>
+
+            <div id="appointmentList">
+                <h2>Próximos Agendamentos</h2>
+                <ul id="appointments"></ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- Rodapé com Direitos Reservados -->
+    <footer class="footer">
+        <p>&copy; 2024 Direitos Reservados - Alefim Oliveira</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

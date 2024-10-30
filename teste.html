@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano de Tratamento</title>
+    <link rel="stylesheet" href="sty.css">
+</head>
+<body>
+    <div class="treatment-plan">
+        <div class="tooth-chart">
+            <img src="tooth-chart.png" alt="Diagrama dos dentes">
+        </div>
+        
+        <table class="treatment-table">
+            <tr>
+                <th>Plano de tratamento</th>
+                <th>Valor</th>
+            </tr>
+            <tbody id="treatment-rows">
+                <!-- Linhas dinâmicas de tratamento -->
+            </tbody>
+        </table>
+
+        <div class="payment-info">
+            <label>Forma de pagamento:</label>
+            <select id="paymentMethod">
+                <option value="credito">Cartão de Crédito</option>
+                <option value="debito">Cartão de Débito</option>
+                <option value="pix">PIX</option>
+                <option value="dinheiro">Dinheiro</option>
+            </select>
+            <label>Total:</label>
+            <input type="text" id="totalAmount" disabled value="R$ 0,00">
+        </div>
+        
+
+        <h2>Tratamentos Realizados</h2>
+        <table class="completed-treatments">
+            <tr>
+                <th>Data</th>
+                <th>Tratamento</th>
+            </tr>
+            <tbody id="completed-treatment-rows">
+                <!-- Linhas dinâmicas de tratamentos realizados -->
+            </tbody>
+        </table>
+
+        <h2>Pagamentos</h2>
+        <table class="payment-history">
+            <tr>
+                <th>Data</th>
+                <th>Forma de Pagamento</th>
+                <th>Valor</th>
+            </tr>
+            <tbody id="payment-rows">
+                <!-- Linhas dinâmicas de pagamentos -->
+            </tbody>
+        </table>
+        
+        <button onclick="addTreatment()">Adicionar Tratamento</button>
+        <button onclick="addCompletedTreatment()">Adicionar Tratamento Realizado</button>
+        <button onclick="addPayment()">Adicionar Pagamento</button>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>

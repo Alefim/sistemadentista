@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sistema de Agendamento Dentista</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="userType">Tipo de Usuário:</label>
+            <select id="userType" name="userType" required>
+                <option value="admin">Administrador</option>
+                <option value="recepcionista">Recepcionista</option>
+                <option value="dentista">Dentista</option>
+            </select>
+
+            <button type="submit">Entrar</button>
+        </form>
+        <p id="loginMessage" class="error-message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
