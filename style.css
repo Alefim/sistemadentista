@@ -1,0 +1,61 @@
+/* Estilos para a tela de login */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 1.5rem;
+    color: #4A4A4A;
+}
+
+.login-container label {
+    display: block;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    color: #4A4A4A;
+}
+
+.login-container input,
+.login-container select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #6a1b9a;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #4a148c;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+}
