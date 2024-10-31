@@ -1,0 +1,31 @@
+/* CSS para o formulário de pagamento */
+.payment-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+.payment-form label {
+    margin-top: 10px;
+}
+
+.payment-form input,
+.payment-form select,
+.payment-form button {
+    padding: 8px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.payment-form button {
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.payment-form button:hover {
+    background-color: #45a049;
+}
